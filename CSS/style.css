@@ -401,10 +401,7 @@ p {
 }
 .img_me {
   width: 100%;
-  /* object-fit: fill; */
-
-  /* scale: 1.5; */
-  /* object-fit: cover; */
+  transform: translateY(-50px);
 }
 .skills_ul li {
   position: relative;
