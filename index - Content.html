@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sascha_Goebbels</title>
+
+    <!-- <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/queries.css" /> -->
+
+    <link rel="stylesheet" href="style.css" />
+    <!--Fonts Roboto OpenSans;Anton;Handlee;PermanentMarker;Monoton;Inspiration-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&family=Handlee&family=Inspiration&family=Monoton&family=Open+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&family=Permanent+Marker&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!--FontAwesome-->
+    <script
+      src="https://kit.fontawesome.com/08bda1a087.js"
+      crossorigin="anonymous"
+    ></script>
+    <!--jQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script defer src="/JS/script.js"></script>
+  </head>
+  <body>
+    <!--Particles Section-->
+    <section>
+      <div id="particles-js" class="nav_section"></div>
+      <a class="particlesBtnLink" href="#skills_div">
+        <div class="particles_div_h1">
+          <h1 class="nav_section2">
+            Hello, I'm
+            <span class="name_h1">Sascha Göbbels</span>.<br /><br />
+            Take a look to my Portfolio !
+          </h1>
+          <button class="particlesBtn" id="particlesBtn">
+            <strong>Here we go...</strong>
+            <i class="fa-sharp fa-solid fa-circle-down arrow_right"></i>
+          </button>
+        </div>
+      </a>
+    </section>
+    <!-- Navbar -->
+
+    <header class="navbar_color hidden">
+      <div class="navbar container">
+        <input
+          type="checkbox"
+          class="navbar__toogle_input"
+          id="navbar__toogle_input"
+        />
+        <a class="logo" href="#particles-js"
+          ><img class="logo__img" src="/img/logo.jpg" alt="Logo"
+        /></a>
+        <ul class="main_nav_list">
+          <li class="navbar__list_item nav_home">
+            <a id="nav_home" class="nav_a" href="#particles-js">Home</a>
+          </li>
+          <li class="navbar__list_item nav_about">
+            <a id="nav_about" class="nav_a" href="#skills_div">About</a>
+          </li>
+          <li class="navbar__list_item nav_portfolio">
+            <a id="nav_portfolio" class="nav_a" href="#portfolio">Portfolio</a>
+          </li>
+          <li class="navbar__list_item nav_projects">
+            <a id="nav_projects" class="nav_a" href="#slidebar">Projects</a>
+          </li>
+          <li class="navbar__list_item nav_contact">
+            <a id="nav_contact" class="nav_a" href="#footer">Contact</a>
+          </li>
+        </ul>
+        <label for="navbar__toogle_input" class="navbar__toogle_label">
+          <img class="navbar__menu_img" src="/img/btn_menu.png" alt="Manu" />
+        </label>
+      </div>
+    </header>
+
+    <section id="skills_div" class="section_skill">
+      <div class="container">
+        <h2 class="hidden">Skills</h2>
+
+        <div class="skills_div_me_skills nav_section" id="about">
+          <div class="div_img_Me_text hidden slide_from_left">
+            <div class="div_img_me">
+              <img class="img_me" src="/img/me/me.jpg" alt="Me" />
+            </div>
+            <h3 class="nav_section2">Thats ME</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Voluptatem autem ipsum nisi ducimus commodi accusantium aliquid,
+              similique aut. Aliquid, velit?
+            </p>
+          </div>
+          <!-- Grid Skills -->
+          <!-- skills_ul -->
+          <div class="skills_ul grid grid__3_cols hidden slide_from_right">
+            <div class="cell_left">HTML</div>
+            <div class="cell_right">
+              <div class="procent html_pro">&nbsp</div>
+              <p class="html_pro_text">75%</p>
+            </div>
+            <div class="cell_left">CSS</div>
+            <div class="cell_right">
+              <div class="procent css_pro">&nbsp</div>
+              <p class="cssl_pro_text">60%</p>
+            </div>
+            <div class="cell_left">Javascript</div>
+            <div class="cell_right">
+              <div class="procent javascript_pro">&nbsp</div>
+              <p class="javascript_pro_text">60%</p>
+            </div>
+            <div class="cell_left">Autohotkey</div>
+            <div class="cell_right">
+              <div class="procent auto_pro">&nbsp</div>
+              <p class="auto_pro_text">80%</p>
+            </div>
+            <div class="cell_left">VBA</div>
+            <div class="cell_right">
+              <div class="procent vba_pro">&nbsp</div>
+              <p class="vba_pro_text">90%</p>
+            </div>
+            <div class="cell_left">Inventor</div>
+            <div class="cell_right">
+              <div class="procent inv_pro">&nbsp</div>
+              <p class="inv_pro_text">90%</p>
+            </div>
+            <div class="cell_left">Photoshop</div>
+            <div class="cell_right">
+              <div class="procent photoshop_pro">&nbsp</div>
+              <p class="photoshop_pro_text">80%</p>
+            </div>
+            <div class="cell_left">Motivation</div>
+            <div class="cell_right">
+              <div class="procent motivation_pro">&nbsp</div>
+              <p class="motivation_pro_text">100%</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Skill Ico -->
+      <h2 class="hidden slide_from_left">My Passion</h2>
+      <div class="skill_ico_mainrow container center">
+        <div class="skill_ico_secondrow container center">
+          <div class="skill_ico_last_div hidden slide_from_left">
+            <img src="/img/ICO/fashion.png" alt="Job" />
+            <h5>Stay in Focus</h5>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam,
+              quam!
+            </p>
+          </div>
+          <div class="skill_ico_last_div hidden slide_from_left delay1">
+            <img src="/img/ICO/bulb.png" alt="Job" />
+            <h5>Learn new Skills</h5>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam,
+              quam!
+            </p>
+          </div>
+        </div>
+        <div class="skill_ico_secondrow container center">
+          <div class="skill_ico_last_div hidden slide_from_left delay2">
+            <img src="/img/ICO/rocket.png" alt="Job" />
+            <h5>Be Active !</h5>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam,
+              quam!
+            </p>
+          </div>
+          <div class="skill_ico_last_div hidden slide_from_left delay3">
+            <img src="/img/ICO/heart.png" alt="Job" />
+            <h5>Family & Friends</h5>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam,
+              quam!
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="story">
+        <h2 class="hidden slide_from_left">Story of mine</h2>
+        <p class="hidden slide_from_right">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
+          omnis voluptates nam neque esse. Itaque enim incidunt nam voluptatem
+          praesentium, consequatur vitae voluptatum doloremque suscipit. Vitae
+          laborum inventore omnis, quo beatae sequi error labore dolores nulla,
+          dolore itaque a odio.
+        </p>
+      </div>
+    </section>
+
+    <!--Portfolio-->
+    <section class="gallery_portfolio portfolio nav_section" id="portfolio">
+      <h2>Portfolio</h2>
+      <div class="gallery_portfolio_div container">
+        <a class="hidden slide_from_bottom" href=""
+          ><img src="//unsplash.it/1001" alt=""
+        /></a>
+        <a class="hidden slide_from_bottom delay1" href=""
+          ><img src="//unsplash.it/1002" alt=""
+        /></a>
+        <a class="hidden slide_from_bottom" href=""
+          ><img src="//unsplash.it/1004" alt=""
+        /></a>
+        <a class="hidden slide_from_bottom delay2" href=""
+          ><img src="//unsplash.it/1003" alt=""
+        /></a>
+        <a class="hidden slide_from_bottom" href=""
+          ><img src="//unsplash.it/1005" alt=""
+        /></a>
+        <a class="hidden slide_from_bottom delay3" href=""
+          ><img src="//unsplash.it/1006" alt=""
+        /></a>
+        <!-- <a class="hidden slide_from_bottom" href=""><img src="//unsplash.it/1001" alt=""></a>
+        <a class="hidden slide_from_bottom delay1" href=""><img src="//unsplash.it/1002" alt=""></a>
+        <a class="hidden slide_from_bottom" href=""><img src="//unsplash.it/1004" alt=""></a> -->
+      </div>
+    </section>
+
+    <!--Slidebar-->
+    <section id="slidebar" class="nav_section">
+      <h2>Current Projects</h2>
+      <div class="project_slidebar_header container">
+        <p class="project_slidebar_header__text">Projects</p>
+      </div>
+
+      <div class="slidebar container" id="slidebar">
+        <button class="slidebar__btn slidebar__btn_left is_hidden">
+          <img
+            class="slidebar__btn_img"
+            src="/img/btn/btn_arrow.svg"
+            alt="Button Left"
+          />
+        </button>
+
+        <div class="slidebar__ul_container">
+          <ul class="slidebar__ul">
+            <li class="slidebar__list current_slide">
+              <img src="//unsplash.it/1501" alt="Bild1" class="slidebar__img" />
+              <a href="https://www.youtube.com/watch?v=VYsVOamdB0g"> </a>
+            </li>
+            <li class="slidebar__list is_hidden">
+              <img src="//unsplash.it/1502" alt="Bild2" class="slidebar__img" />
+              <a href="https://www.youtube.com/watch?v=VYsVOamdB0g"> </a>
+            </li>
+
+            <li class="slidebar__list is_hidden">
+              <img src="//unsplash.it/1503" alt="Bild3" class="slidebar__img" />
+              <a href="https://www.youtube.com/watch?v=VYsVOamdB0g"> </a>
+            </li>
+
+            <li class="slidebar__list is_hidden">
+              <img src="//unsplash.it/1504" alt="Bild3" class="slidebar__img" />
+              <a href="https://www.youtube.com/watch?v=VYsVOamdB0g"> </a>
+            </li>
+            <li class="slidebar__list is_hidden">
+              <img src="//unsplash.it/1505" alt="Bild3" class="slidebar__img" />
+              <a href="https://www.youtube.com/watch?v=VYsVOamdB0g"> </a>
+            </li>
+
+            <li class="slidebar__list is_hidden">
+              <img src="//unsplash.it/1506" alt="Bild3" class="slidebar__img" />
+              <a href="https://www.youtube.com/watch?v=VYsVOamdB0g"> </a>
+            </li>
+            <li class="slidebar__list is_hidden">
+              <img src="//unsplash.it/1507" alt="Bild3" class="slidebar__img" />
+              <a href="https://www.youtube.com/watch?v=VYsVOamdB0g"> </a>
+            </li>
+
+            <li class="slidebar__list is_hidden">
+              <img src="//unsplash.it/1508" alt="Bild3" class="slidebar__img" />
+              <a href="https://www.youtube.com/watch?v=VYsVOamdB0g"> </a>
+            </li>
+            <li class="slidebar__list is_hidden">
+              <img src="//unsplash.it/1509" alt="Bild3" class="slidebar__img" />
+              <a href="https://www.youtube.com/watch?v=VYsVOamdB0g"> </a>
+            </li>
+
+            <li class="slidebar__list is_hidden">
+              <img src="//unsplash.it/1510" alt="Bild3" class="slidebar__img" />
+              <a href="https://www.youtube.com/watch?v=VYsVOamdB0g"> </a>
+            </li>
+          </ul>
+        </div>
+
+        <button class="slidebar__btn slidebar__btn_right">
+          <img
+            class="slidebar__btn_img slidebar__btn_right_img"
+            src="/img/btn/btn_arrow.svg"
+            alt="Button Left"
+          />
+        </button>
+
+        <div class="slidebar__nav">
+          <button class="slidebar__indicator current_indicator"></button>
+          <button class="slidebar__indicator"></button>
+          <button class="slidebar__indicator"></button>
+          <button class="slidebar__indicator"></button>
+          <button class="slidebar__indicator"></button>
+          <button class="slidebar__indicator"></button>
+          <button class="slidebar__indicator"></button>
+          <button class="slidebar__indicator"></button>
+          <button class="slidebar__indicator"></button>
+          <button class="slidebar__indicator"></button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <div class="footer contact nav_section" id="footer">
+      <!-- <div class="triangle_shape">
+        <img class="triangle__img" src="/img/btn/btn_arrow.svg" alt="triangle_shape">
+    </div> -->
+      <div class="contact_div center">
+        <h3 class="hidden slide_from_right">Contact</h3>
+        <div class="contact_input hidden zoom_in">
+          <!-- slide_from_left -->
+          <input type="text" value="Name" />
+          <input type="email" value="Email-Adress" />
+          <!-- <input id="input_message" type="text" value="Your Message"> -->
+          <textarea id="input_message" rows="7"></textarea
+          ><!--Your Message-->
+          <button class="center">Submit</button>
+        </div>
+        <div class="goup_btn">
+          <a href="#particles-js"
+            ><img src="/img/btn/btn_arrow.svg" alt=""
+          /></a>
+        </div>
+      </div>
+
+      <div class="footer_social">
+        <div class="footer_social_div container">
+          <ul class="footer_social_ico">
+            <li class="social_ico">
+              <a href="#particles-js"
+                ><img src="/img/ICO/Social/facebock.png" alt="facebook"
+              /></a>
+            </li>
+            <li class="social_ico">
+              <a href="#particles-js"
+                ><img src="/img/ICO/Social/telegram.png" alt="facebook"
+              /></a>
+            </li>
+            <li class="social_ico">
+              <a href="#particles-js"
+                ><img src="/img/ICO/Social/github.png" alt="facebook"
+              /></a>
+            </li>
+            <li class="social_ico">
+              <a href="#particles-js"
+                ><img src="/img/ICO/Social/whatsapp.png" alt="facebook"
+              /></a>
+            </li>
+            <li class="social_ico">
+              <a href="#particles-js"
+                ><img src="/img/ICO/Social/insta.png" alt="facebook"
+              /></a>
+            </li>
+          </ul>
+          <ul class="navbar_btn legalnotice">
+            <li class="navbar__list_item">
+              <a class="nav_a" href="#particles-js">Legal Notice </a>
+            </li>
+            <li class="navbar__list_item">
+              <a class="nav_a" href="#skills_div">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scripts -->
+    <!--Particles-->
+    <script type="text/javascript" src="JS/particles.js"></script>
+    <script src="JS/app.js"></script>
+    <!-- Slidebar -->
+    <script src="/JS/slidebar.js"></script>
+  </body>
+</html>
