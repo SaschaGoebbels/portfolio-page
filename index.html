@@ -1,5 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<!-- <html lang="en"> -->
+<html>
+<!-- 
+  <span lang="en"></span><span lang="de"></span> 
+-->
 
 <head>
   <meta charset="UTF-8" />
@@ -37,14 +41,16 @@
     <a class="particlesBtnLink" href="#skills_div">
       <div class="particles_div_h1">
         <h1 class="nav_section2">
-          Hello, I'm
+          <span lang="en">Hello, I'm</span><span lang="de">Hallo, ich bin</span>
           <span class="name_h1">Sascha Göbbels</span><br /><br />
-          Software Developer from Wiesbaden
+          <span lang="en">Software Developer from Wiesbaden</span><span lang="de">Software Entwickler aus
+            Wiesbaden</span>
           <br /><br />
-          Take a look at my Portfolio !
+          <span lang="en">Take a look at my Portfolio !</span><span lang="de">Werfen Sie einen Blick auf mein Portfolio
+            !</span>
         </h1>
         <button class="particlesBtn" id="particlesBtn">
-          <strong>Here we go...</strong>
+          <strong><span lang="en">Here we go...</span><span lang="de">Los geht´s...</span></strong>
           <i class="fa-sharp fa-solid fa-circle-down arrow_right"></i>
         </button>
       </div>
@@ -68,12 +74,16 @@
           <a id="nav_portfolio" class="nav_a" href="#portfolio">Portfolio</a>
         </li>
         <li class="navbar__list_item nav_projects">
-          <a id="nav_projects" class="nav_a" href="#slidebar">Projects</a>
+          <a id="nav_projects" class="nav_a" href="#slidebar"><span lang="en">Projects</span><span
+              lang="de">Projekte</span></a>
         </li>
         <li class="navbar__list_item nav_contact">
-          <a id="nav_contact" class="nav_a" href="#footer">Contact</a>
+          <a id="nav_contact" class="nav_a" href="#footer"><span lang="en">Contact</span><span
+              lang="de">Kontakt</span></a>
         </li>
       </ul>
+      <button id="switch-lang"> <span lang="en">Sprache: <br>Deutsch</span><span lang="de">Language:
+          <br>Englisch</span></button>
       <label for="navbar__toogle_input" class="navbar__toogle_label">
         <img class="navbar__menu_img" src="/img/btn_menu.png" alt="Manu" />
         <ion-icon class="disp_none close_ico navbar__menu_img" name="close-outline"></ion-icon>
@@ -90,11 +100,12 @@
           <div class="div_img_me">
             <img class="img_me" src="/img/me/me.jpg" alt="Me" />
           </div>
-          <h3 class="nav_section2">Thats ME</h3>
+          <h3 class="nav_section2"><span lang="en">Thats ME</span><span lang="de">Thats ME</span></h3>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Voluptatem autem ipsum nisi ducimus commodi accusantium aliquid,
-            similique aut. Aliquid, velit?
+            <span lang="en">I am a family man, happily married and have a daughter. Family comes first.</span><span
+              lang="de">Ich bin Familienvater, glücklich verheiratet und habe
+              eine Tochter. Die Familie steht an erster stelle.
+            </span>
           </p>
         </div>
         <!-- Grid Skills -->
@@ -103,23 +114,28 @@
           <div class="cell_left">HTML</div>
           <div class="cell_right">
             <div class="procent html_pro">&nbsp</div>
-            <p class="html_pro_text">75%</p>
+            <p class="html_pro_text">90%</p>
           </div>
           <div class="cell_left">CSS</div>
           <div class="cell_right">
             <div class="procent css_pro">&nbsp</div>
-            <p class="cssl_pro_text">60%</p>
+            <p class="cssl_pro_text">80%</p>
+          </div>
+          <div class="cell_left">SASS</div>
+          <div class="cell_right">
+            <div class="procent css_pro">&nbsp</div>
+            <p class="cssl_pro_text">80%</p>
           </div>
           <div class="cell_left">Javascript</div>
           <div class="cell_right">
             <div class="procent javascript_pro">&nbsp</div>
-            <p class="javascript_pro_text">60%</p>
+            <p class="javascript_pro_text">75%</p>
           </div>
           <div class="cell_left">React</div>
           <div class="cell_right">
             <div class="procent react_pro">&nbsp</div>
             <!--&nbsp-->
-            <p class="react_pro_text">10%</p>
+            <p class="react_pro_text">75%</p>
           </div>
           <div class="cell_left">Git</div>
           <div class="cell_right">
@@ -150,53 +166,166 @@
       </div>
     </div>
     <!-- Skill Ico -->
-    <h2 class="hidden slide_from_left">My Passion</h2>
+    <h2 class="hidden slide_from_left"><span lang="en">My Passion</span><span lang="de">My Passion</span></h2>
     <div class="skill_ico_mainrow container center">
       <div class="skill_ico_secondrow center">
         <div class="skill_ico_last_div hidden slide_from_left">
           <img src="/img/ICO/fashion.png" alt="Job" />
-          <h5>Stay in Focus</h5>
+          <h5><span lang="en">Stay in Focus</span><span lang="de">Fokussiert bleiben</span></h5>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam,
-            quam!
+            <span lang="en">Set goals and always have the goal in mind!</span><span lang="de">Ziele setzen und immer
+              das Ziel vor Augen haben!</span>
           </p>
         </div>
         <div class="skill_ico_last_div hidden slide_from_left delay1">
           <img src="/img/ICO/bulb.png" alt="Job" />
-          <h5>Learn new Skills</h5>
+          <h5><span lang="en">Learn new Skills</span><span lang="de">Neue Skills lernen</span></h5>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam,
-            quam!
+            <span lang="en">I work on developing my skills every day!</span><span lang="de">Ich arbeite täglich daran
+              meine Skills weiterzuentwickeln!</span>
           </p>
         </div>
       </div>
       <div class="skill_ico_secondrow center">
         <div class="skill_ico_last_div hidden slide_from_left delay2">
           <img src="/img/ICO/rocket.png" alt="Job" />
-          <h5>Be Active !</h5>
+          <h5><span lang="en">Be Active</span><span lang="de">Aktiv bleiben</span></h5>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam,
-            quam!
+            <span lang="en">A rolling stone gathers no moss!</span><span lang="de">Wer rastet der rostet!</span>
           </p>
         </div>
         <div class="skill_ico_last_div hidden slide_from_left delay3">
           <img src="/img/ICO/heart.png" alt="Job" />
-          <h5>Family & Friends</h5>
+          <h5><span lang="en">Family & Friends</span><span lang="de">Familie & Freunde</span></h5>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam,
-            quam!
+            <span lang="en">Life is short so make the most of every day!</span><span lang="de">Das Leben ist kurz darum
+              nutze jeden Tag!</span>
           </p>
         </div>
       </div>
     </div>
     <div class="story container">
-      <h2 class="hidden slide_from_left">Story of mine</h2>
+      <h2 class="hidden slide_from_left"><span lang="en">Story of mine</span><span lang="de">Meine Geschichte</span>
+      </h2>
       <p class="hidden slide_from_right">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
-        omnis voluptates nam neque esse. Itaque enim incidunt nam voluptatem
-        praesentium, consequatur vitae voluptatum doloremque suscipit. Vitae
-        laborum inventore omnis, quo beatae sequi error labore dolores nulla,
-        dolore itaque a odio.
+        <span lang="en">The story of how I got into coding is a little bit different.
+          First, I must say that I am a hobby photographer.
+          At some
+          point, I decided to buy an additional keyboard specifically for photographers. I was really excited about the
+          new tool
+          and waited several days for the package to arrive.
+          <br>
+          After I plugged the keyboard into my computer and tried to use it, there was a bad awakening for me when I
+          realized that
+          the software was not compatible with this type of keyboard. I was absolutely frustrated and started Googling
+          about how I
+          could program it to work. After trying different approaches, I came across AutoHotkey. Within a few days, I
+          solved my
+          problem and got the new keyboard to work.
+          <br>
+          After I realized the power of AutoHotKey, I kept learning and wrote some scripts for my current job. I
+          automated
+          various
+          tasks to speed up my workflow. Once my colleagues saw these new tools, they also wanted to use them, so I
+          installed the
+          scripts on their computers as well. However, I encountered some new problems: not all of my colleagues use the
+          same
+          shortcuts, and they didn't want to use all of the new workflows like I did. So, I created a GUI that allowed
+          everyone to
+          decide which of the new tools they wanted to use. There were also options to customize their own shortcuts and
+          folder
+          paths as they desired. All of the different options were saved in an INI file and loaded on system startup. At
+          this
+          point, all of the scripts were located on every PC, and like any software, there were a lot of updates and new
+          features
+          to implement. After I had twice installed the new version on six different machines, I realized that this
+          wasn't
+          the
+          right approach.
+          <br>
+          I decided to store the whole scripts on our server and wrote a small script that I installed on every machine
+          to
+          run on
+          system start, which would run the scripts from the server. This works perfectly for me. However, I realized
+          that
+          I still
+          couldn't update if someone was still logged in and using the scripts, so I wrote an overall watch script that
+          I
+          could
+          enter from my PC and kill all instances of the other PCs from there. After pushing the update, I restarted all
+          the
+          scripts from my machine to the others. That was the final result, and from there I was able to update a lot of
+          new
+          features.
+          <br>
+          I had now gained a foundation in the core concepts of programming and I started learning a new language. VBA
+          was
+          my next
+          target, and I used my new knowledge to improve my construction workflow. I learned all about VBA and iLogic in
+          a
+          few
+          weeks and wrote some scripts that my colleagues and I used all the time. They were all grateful for the
+          improvement.
+          After studying a lot and realizing that coding is a lot of fun, I wanted to dive deeper. I realized that this
+          path could
+          become a future job and started my research. At this point, I wanted to learn more and build up a portfolio,
+          so
+          I chose
+          to start with HTML, CSS, and JavaScript. I had the idea for a recipe app with a "coincidence" button to decide
+          which
+          recipe to cook.
+          <br>
+          Over the next few weeks, I learned and worked on my app. Day after day, I had new ideas for the app and I also
+          wanted to
+          include a weekly plan and a shopping list. After some time and different versions of the app, I realized that
+          I
+          needed a
+          deeper knowledge of JavaScript. I finished the complete course on freeCodeCamp and simultaneously took some
+          Udemy
+          courses.
+          <br><br>
+          I continued learning and coding for a few months. On this path, I also learned all about Git and version
+          control. I
+          started creating my own portfolio page to introduce myself to potential employers. At this stage, I also
+          learned
+          about
+          the benefits of Sass and Parcel.
+          <br><br>
+          At the moment, I am learning all about Node.js and React. On my future list is learning about databases. I am
+          also
+          really interested in data science and machine learning.</span><span lang="de">Mein Weg zum Programmieren
+          begann auf eine etwas ungewöhnliche Art und Weise. Als begeisterter Hobbyfotograf wollte ich
+          mir eine spezielle Tastatur für Fotografen kaufen. Doch als ich diese an meinen Computer anschloss, stellte
+          ich fest,
+          dass die Software nicht mit dieser Tastatur kompatibel war. Frustriert begann ich zu googeln und entdeckte
+          AutoHotkey,
+          mit dem ich mein Problem innerhalb weniger Tage lösen konnte. Ich erkannte schnell die Möglichkeiten, die mir
+          das
+          Programmieren bieten konnte, und begann, Skripte zu schreiben, um meine Arbeitsabläufe zu automatisieren und
+          zu
+          verbessern.
+          <br><br>
+          Als meine Kollegen meine neuen Werkzeuge sahen, wollten sie sie auch nutzen, aber jeder hatte unterschiedliche
+          Bedürfnisse und Vorlieben. Um diese Unterschiede zu berücksichtigen, entwickelte ich eine GUI, mit der jeder
+          seine
+          eigenen Tastenkombinationen und Einstellungen anpassen konnte. Doch als ich begann, Updates zu implementieren,
+          erkannte
+          ich, dass es nicht praktikabel war, alle Skripte auf jedem Computer zu installieren. Also speicherte ich sie
+          auf einem
+          Server und schrieb ein kleines Skript, das die Skripte von dort ausführt. Um Updates durchzuführen, schrieb
+          ich ein
+          Überwachungsskript, das ich von meinem PC aus aufrufen konnte, um alle Instanzen der anderen PCs zu beenden
+          und die
+          neuen Skripte zu starten.
+          <br><br>
+          Durch diese Erfahrungen erwarb ich ein grundlegendes Verständnis für die Kernkonzepte des Programmierens und
+          begann,
+          eine neue Sprache zu lernen - VBA. Innerhalb weniger Wochen hatte ich alles über VBA und iLogic gelernt und
+          Skripte
+          geschrieben, die mein Team und ich täglich nutzten. Ich war stolz darauf, dass ich mit meinen Fähigkeiten
+          einen echten
+          Mehrwert für mein Team und meine Arbeit schaffen konnte.</span>
+
       </p>
     </div>
   </section>
@@ -219,7 +348,7 @@
 
   <!--Slidebar-->
   <section id="slidebar" class="nav_section">
-    <h2>Current Projects</h2>
+    <h2><span lang="en">Current Projects</span><span lang="de">Aktuelle Projekte</span></h2>
     <!-- <div class="project_slidebar_header container">
         <p class="project_slidebar_header__text">Projects</p>
       </div> -->
@@ -303,7 +432,7 @@
     </div> -->
     <form class="contact_div center" action="#">
       <!--action send to server-->
-      <h3 class="hidden slide_from_right">Contact</h3>
+      <h3 class="hidden slide_from_right"><span lang="en">Contact</span><span lang="de">Kontakt</span></h3>
       <div class="contact_input hidden zoom_in">
         <!-- slide_from_left -->
         <input type="text" placeholder="Name" />
@@ -311,7 +440,7 @@
         <!-- <input id="input_message" type="text" value="Your Message"> -->
         <textarea id="input_message" rows="7" placeholder="Your Message"></textarea>
         <!--Your Message-->
-        <button class="center">Submit</button>
+        <button class="center"><span lang="en">Submit</span><span lang="de">Abschicken</span></button>
       </div>
       <div class="goup_btn">
         <a href="#particles-js"><img src="/img/btn/btn_arrow.svg" alt="" /></a>
@@ -340,10 +469,11 @@
         </ul>
         <ul class="navbar_btn legalnotice">
           <li class="navbar__list_item">
-            <a class="nav_a" href="#particles-js">Legal Notice </a>
+            <a class="nav_a" href="#particles-js"><span lang="en">Legal Notice</span><span
+                lang="de">Impressum</span></a>
           </li>
           <li class="navbar__list_item">
-            <a class="nav_a" href="#skills_div">Contact</a>
+            <a class="nav_a" href="#skills_div"><span lang="en">Contact</span><span lang="de">Kontakt</span></a>
           </li>
         </ul>
       </div>

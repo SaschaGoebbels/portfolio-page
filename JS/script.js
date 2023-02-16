@@ -12,7 +12,14 @@ const observer = new IntersectionObserver((entries, obs_opt) => {
     }
   });
 });
-
+////////////////////////////////////////////////////////////////////////////
+// Language switch
+$('[lang="en"]').hide();
+$("#switch-lang").click(function () {
+  $('[lang="de"]').toggle();
+  $('[lang="en"]').toggle();
+});
+////////////////////////////////////////////////////////////////////////////
 const hiddenElements = document.querySelectorAll(".hidden");
 hiddenElements.forEach((el) => observer.observe(el));
 ////////////////////////////////////////////////////////////////////////////
