@@ -82,7 +82,8 @@
               lang="de">Kontakt</span></a>
         </li>
       </ul>
-      <button id="switch-lang"> <span lang="en">Sprache: <br>Deutsch</span><span lang="de">Language:
+      <button class="navbar__langBtn" id="switch-lang"> <span lang="en">Sprache: <br>Deutsch</span><span
+          lang="de">Language:
           <br>Englisch</span></button>
       <label for="navbar__toogle_input" class="navbar__toogle_label">
         <img class="navbar__menu_img" src="/img/btn_menu.png" alt="Manu" />
@@ -207,126 +208,91 @@
     <div class="story container">
       <h2 class="hidden slide_from_left"><span lang="en">Story of mine</span><span lang="de">Meine Geschichte</span>
       </h2>
-      <p class="hidden slide_from_right">
-        <span lang="en">The story of how I got into coding is a little bit different.
-          First, I must say that I am a hobby photographer.
-          At some
-          point, I decided to buy an additional keyboard specifically for photographers. I was really excited about the
-          new tool
-          and waited several days for the package to arrive.
-          <br>
-          After I plugged the keyboard into my computer and tried to use it, there was a bad awakening for me when I
-          realized that
-          the software was not compatible with this type of keyboard. I was absolutely frustrated and started Googling
-          about how I
-          could program it to work. After trying different approaches, I came across AutoHotkey. Within a few days, I
-          solved my
-          problem and got the new keyboard to work.
-          <br>
-          After I realized the power of AutoHotKey, I kept learning and wrote some scripts for my current job. I
-          automated
-          various
-          tasks to speed up my workflow. Once my colleagues saw these new tools, they also wanted to use them, so I
-          installed the
-          scripts on their computers as well. However, I encountered some new problems: not all of my colleagues use the
-          same
-          shortcuts, and they didn't want to use all of the new workflows like I did. So, I created a GUI that allowed
-          everyone to
-          decide which of the new tools they wanted to use. There were also options to customize their own shortcuts and
-          folder
-          paths as they desired. All of the different options were saved in an INI file and loaded on system startup. At
-          this
-          point, all of the scripts were located on every PC, and like any software, there were a lot of updates and new
-          features
-          to implement. After I had twice installed the new version on six different machines, I realized that this
-          wasn't
-          the
-          right approach.
-          <br>
-          I decided to store the whole scripts on our server and wrote a small script that I installed on every machine
-          to
-          run on
-          system start, which would run the scripts from the server. This works perfectly for me. However, I realized
-          that
-          I still
-          couldn't update if someone was still logged in and using the scripts, so I wrote an overall watch script that
-          I
-          could
-          enter from my PC and kill all instances of the other PCs from there. After pushing the update, I restarted all
-          the
-          scripts from my machine to the others. That was the final result, and from there I was able to update a lot of
-          new
-          features.
-          <br>
-          I had now gained a foundation in the core concepts of programming and I started learning a new language. VBA
-          was
-          my next
-          target, and I used my new knowledge to improve my construction workflow. I learned all about VBA and iLogic in
-          a
-          few
-          weeks and wrote some scripts that my colleagues and I used all the time. They were all grateful for the
-          improvement.
-          After studying a lot and realizing that coding is a lot of fun, I wanted to dive deeper. I realized that this
-          path could
-          become a future job and started my research. At this point, I wanted to learn more and build up a portfolio,
-          so
-          I chose
-          to start with HTML, CSS, and JavaScript. I had the idea for a recipe app with a "coincidence" button to decide
-          which
-          recipe to cook.
-          <br>
-          Over the next few weeks, I learned and worked on my app. Day after day, I had new ideas for the app and I also
-          wanted to
-          include a weekly plan and a shopping list. After some time and different versions of the app, I realized that
-          I
-          needed a
-          deeper knowledge of JavaScript. I finished the complete course on freeCodeCamp and simultaneously took some
-          Udemy
-          courses.
-          <br><br>
-          I continued learning and coding for a few months. On this path, I also learned all about Git and version
-          control. I
-          started creating my own portfolio page to introduce myself to potential employers. At this stage, I also
-          learned
-          about
-          the benefits of Sass and Parcel.
-          <br><br>
-          At the moment, I am learning all about Node.js and React. On my future list is learning about databases. I am
-          also
-          really interested in data science and machine learning.</span><span lang="de">Mein Weg zum Programmieren
-          begann auf eine etwas ungewöhnliche Art und Weise. Als begeisterter Hobbyfotograf wollte ich
-          mir eine spezielle Tastatur für Fotografen kaufen. Doch als ich diese an meinen Computer anschloss, stellte
-          ich fest,
-          dass die Software nicht mit dieser Tastatur kompatibel war. Frustriert begann ich zu googeln und entdeckte
-          AutoHotkey,
-          mit dem ich mein Problem innerhalb weniger Tage lösen konnte. Ich erkannte schnell die Möglichkeiten, die mir
-          das
-          Programmieren bieten konnte, und begann, Skripte zu schreiben, um meine Arbeitsabläufe zu automatisieren und
-          zu
-          verbessern.
-          <br><br>
-          Als meine Kollegen meine neuen Werkzeuge sahen, wollten sie sie auch nutzen, aber jeder hatte unterschiedliche
-          Bedürfnisse und Vorlieben. Um diese Unterschiede zu berücksichtigen, entwickelte ich eine GUI, mit der jeder
-          seine
-          eigenen Tastenkombinationen und Einstellungen anpassen konnte. Doch als ich begann, Updates zu implementieren,
-          erkannte
-          ich, dass es nicht praktikabel war, alle Skripte auf jedem Computer zu installieren. Also speicherte ich sie
-          auf einem
-          Server und schrieb ein kleines Skript, das die Skripte von dort ausführt. Um Updates durchzuführen, schrieb
-          ich ein
-          Überwachungsskript, das ich von meinem PC aus aufrufen konnte, um alle Instanzen der anderen PCs zu beenden
-          und die
-          neuen Skripte zu starten.
-          <br><br>
-          Durch diese Erfahrungen erwarb ich ein grundlegendes Verständnis für die Kernkonzepte des Programmierens und
-          begann,
-          eine neue Sprache zu lernen - VBA. Innerhalb weniger Wochen hatte ich alles über VBA und iLogic gelernt und
-          Skripte
-          geschrieben, die mein Team und ich täglich nutzten. Ich war stolz darauf, dass ich mit meinen Fähigkeiten
-          einen echten
-          Mehrwert für mein Team und meine Arbeit schaffen konnte.</span>
+      <div class="story_textBox">
+        <p class="hidden slide_from_right">
+          <span lang="en">The story of how I got into coding is a little bit different.
+            First, I must say that I am a hobby photographer.
+            At some point, I decided to buy an additional keyboard specifically for photographers. I was really excited
+            about the new tool and waited several days for the package to arrive.
+            <br>
+            After I plugged the keyboard into my computer and tried to use it, there was a bad awakening for me when I
+            realized that the software was not compatible with this type of keyboard. I was absolutely frustrated and
+            started Googling about how I could program it to work. <br>
+            After trying different approaches, I came across AutoHotkey. Within a few days, I solved my problem and got
+            the new keyboard to work.
+            <br><br>
+            After I realized the power of AutoHotKey, I kept learning and wrote some scripts for my current job. I
+            automated various tasks to speed up my workflow. Once my colleagues saw these new tools, they also wanted to
+            use them, so I installed the scripts on their computers as well. <br>
+            However, I encountered some new problems: Not all of my colleagues use the same shortcuts, and they didn't
+            want to use all of the new workflows like I did. <br>
+            So, I created a GUI that allowed everyone to decide which of the new tools they wanted to use. There were
+            also options to customize their own shortcuts and folder paths as they desired. All of the different options
+            were saved in an INI file and loaded on system startup.<br>
+            At this point, all of the scripts were located on every PC, and like any software, there were a lot of
+            updates and new features to implement. After I had twice installed the new version on six different
+            machines, I realized that this wasn't the right approach.
+            <br><br>
+            I decided to store the whole scripts on our server and wrote a stater-script that I installed on every
+            machine to run on system start, which would run the scripts from the server. This works perfectly for me.
+            However, I realized that I still couldn't update if someone was still logged in and using the scripts, so I
+            wrote an overall watch script that I could enter from my PC and kill all instances of the other PCs from
+            there. <br>
+            After pushing the update, I restarted all the scripts from my machine to the others. That was the final
+            result, and from there I was able to update a lot of new features.
+            <br>
+            I had now gained a foundation in the core concepts of programming and I started learning a new language. VBA
+            was my next target, and I used my new knowledge to improve my construction workflow. I learned all about VBA
+            and iLogic in a few weeks and wrote some scripts that my colleagues and I used all the time. They were all
+            grateful for the improvement.
+            After studying a lot and realizing that coding is a lot of fun, I wanted to dive deeper. I realized that
+            this path could become a future job and started my research. At this point, I wanted to learn more and build
+            up a portfolio, so I chose to start with HTML, CSS, and JavaScript. I had the idea for a recipe app with a
+            "coincidence" button to decide which recipe to cook.
+            <br>
+            Over the next few weeks, I learned and worked on my app. Day after day, I had new ideas for the app and I
+            also wanted to include a weekly plan and a shopping list. After some time and different versions of the app,
+            I realized that I needed a deeper knowledge of JavaScript. I finished the complete course on freeCodeCamp
+            and simultaneously took some Udemy courses.
+            <br><br>
+            I continued learning and coding for a few months. On this path, I also learned all about Git and version
+            control. I started creating my own portfolio page to introduce myself to potential employers. At this stage,
+            I also learned about the benefits of Sass and Parcel.
+            <br><br>
+            At the moment, I am learning all about Node.js and React. On my future list is learning about databases. I
+            am also really interested in data science and machine learning.
+          </span><span lang="de">Mein Weg zum Programmieren begann auf eine etwas ungewöhnliche Art und Weise. Als
+            begeisterter Hobbyfotograf wollte ich mir eine spezielle Tastatur für Fotografen kaufen. Doch als ich diese
+            an meinen Computer anschloss, stellte ich fest, dass Foto-Software nicht mit dieser Tastatur kompatibel war.
+            <br>
+            Frustriert begann ich zu googeln ! Auf der Suche nach einer Lösung, wie ich die Software umprogrammieren
+            kann, entdeckte ich AutoHotkey. Mit diesem Tool konnte ich mein Problem innerhalb weniger Tage
+            lösen.<br>
+            Ich erkannte schnell die Möglichkeiten, die mir das Programmieren bieten konnte, und begann,
+            Skripte zu schreiben, um meine Arbeitsabläufe zu automatisieren und zu verbessern.
+            <br><br>
+            Als meine Kollegen diese selbst programmierten Tools sahen, wollten sie sie auch nutzen. Allerdings hatte
+            jeder unterschiedliche Bedürfnisse und Vorlieben zwecks Shortcuts und Anwendnung. <br>
+            Um diese Unterschiede zu berücksichtigen, entwickelte ich eine GUI, mit der jeder seine eigenen
+            Tastenkombinationen und Einstellungen anpassen konnte. Doch als ich begann, Updates zu implementieren,
+            erkannte ich, dass es nicht praktikabel war, alle Skripte auf jedem Computer zu installieren. Also
+            speicherte ich sie auf einem Server und schrieb ein Start-Skript, das die anderen Skripte von dort
+            ausführt.<br>
+            Um Updates durchzuführen, schrieb ich ein Überwachungsskript, das ich von meinem PC aus aufrufen konnte, um
+            alle Instanzen der anderen PCs zu beenden und die neuen Skripte zu starten.
+            <br><br>
+            Durch diese Erfahrungen erwarb ich ein grundlegendes Verständnis für die Kernkonzepte des Programmierens und
+            begann, weitere Programmiersprachen zu lernen. Innerhalb weniger Wochen hatte ich alles über VBA und iLogic
+            gelernt und Skripte geschrieben, die mein Team und ich täglich nutzten. Ich war stolz darauf, dass ich mit
+            meinen Fähigkeiten einen echten Mehrwert für mein Team und meine Arbeit schaffen konnte. <br>
+            Motiviert von den Neuen Fähigkeiten, lerne ich seitdem ununterbrochen weiter und arbeite stetig an meinen
+            Skills !<br>
+            Aktuell arbeite ich in einer Festanstellung als Maschinenbau-Techniker.<br>
+            Mein Ziel ist es in 2023 den beruflichen Umstieg in die IT-Branche zu schaffen.
+          </span>
 
-      </p>
+        </p>
+      </div>
     </div>
   </section>
 
@@ -334,12 +300,18 @@
   <section class="gallery_portfolio portfolio nav_section" id="portfolio">
     <h2>Portfolio</h2>
     <div class="gallery_portfolio_div container">
-      <a class="hidden slide_from_bottom" href=""><img src="//unsplash.it/1001" alt="" /></a>
-      <a class="hidden slide_from_bottom delay1" href=""><img src="//unsplash.it/1002" alt="" /></a>
-      <a class="hidden slide_from_bottom" href=""><img src="//unsplash.it/1004" alt="" /></a>
-      <a class="hidden slide_from_bottom delay2" href=""><img src="//unsplash.it/1003" alt="" /></a>
-      <a class="hidden slide_from_bottom" href=""><img src="//unsplash.it/1005" alt="" /></a>
-      <a class="hidden slide_from_bottom delay3" href=""><img src="//unsplash.it/1006" alt="" /></a>
+      <a class="hidden slide_from_bottom" href="https://kochstudio-demo.netlify.app" target="_blank" /><img
+        src="./img/Portfolio/recipeList.png" alt="Rezeptliste" /></a>
+      <a class="hidden slide_from_bottom delay1" href="https://kochstudio-demo.netlify.app" target="_blank"><img
+          src="./img/Portfolio/login.png" alt="Login" /></a>
+      <a class="hidden slide_from_bottom" href="https://kochstudio-demo.netlify.app" target="_blank"><img
+          src="./img/Portfolio/menu.png" alt="Menu" /></a>
+      <a class="hidden slide_from_bottom delay2" href="https://kochstudio-demo.netlify.app" target="_blank"><img
+          src="./img/Portfolio/shoppingList.png" alt="Einkaufsliste" /></a>
+      <a class="hidden slide_from_bottom" href="https://kochstudio-demo.netlify.app" target="_blank"><img
+          src="./img/Portfolio/avoidList.png" alt="Avoidlist" /></a>
+      <a class="hidden slide_from_bottom delay3" href="https://kochstudio-demo.netlify.app" target="_blank"><img
+          src="./img/Portfolio/weeklyPlan.png" alt="Wochenplan" /></a>
       <!-- <a class="hidden slide_from_bottom" href=""><img src="//unsplash.it/1001" alt=""></a>
         <a class="hidden slide_from_bottom delay1" href=""><img src="//unsplash.it/1002" alt=""></a>
         <a class="hidden slide_from_bottom" href=""><img src="//unsplash.it/1004" alt=""></a> -->
@@ -361,20 +333,20 @@
       <div class="slidebar__ul_container">
         <ul class="slidebar__ul">
           <li class="slidebar__list current_slide">
-            <img src="//unsplash.it/1501" alt="Bild1" class="slidebar__img" />
-            <a href="https://www.youtube.com/watch?v=VYsVOamdB0g"> </a>
+            <img src="./img/Projects/nextJS.png" alt="Bild1" class="slidebar__img" />
+            <a href=""> </a>
           </li>
           <li class="slidebar__list is_hidden">
-            <img src="//unsplash.it/1502" alt="Bild2" class="slidebar__img" />
-            <a href="https://www.youtube.com/watch?v=VYsVOamdB0g"> </a>
-          </li>
-
-          <li class="slidebar__list is_hidden">
-            <img src="//unsplash.it/1503" alt="Bild3" class="slidebar__img" />
-            <a href="https://www.youtube.com/watch?v=VYsVOamdB0g"> </a>
+            <img src="./img/Projects/improve.png" alt="Bild2" class="slidebar__img" />
+            <a href=""> </a>
           </li>
 
           <li class="slidebar__list is_hidden">
+            <img src="./img/Projects/portfolio.png" alt="Bild3" class="slidebar__img" />
+            <a href=""> </a>
+          </li>
+
+          <!-- <li class="slidebar__list is_hidden">
             <img src="//unsplash.it/1504" alt="Bild3" class="slidebar__img" />
             <a href="https://www.youtube.com/watch?v=VYsVOamdB0g"> </a>
           </li>
@@ -404,7 +376,7 @@
           <li class="slidebar__list is_hidden">
             <img src="//unsplash.it/1510" alt="Bild3" class="slidebar__img" />
             <a href="https://www.youtube.com/watch?v=VYsVOamdB0g"> </a>
-          </li>
+          </li> -->
         </ul>
       </div>
       <button class="slidebar__btn slidebar__btn_right">
@@ -414,13 +386,13 @@
         <button class="slidebar__indicator current_indicator"></button>
         <button class="slidebar__indicator"></button>
         <button class="slidebar__indicator"></button>
+        <!-- <button class="slidebar__indicator"></button>
         <button class="slidebar__indicator"></button>
         <button class="slidebar__indicator"></button>
         <button class="slidebar__indicator"></button>
         <button class="slidebar__indicator"></button>
         <button class="slidebar__indicator"></button>
-        <button class="slidebar__indicator"></button>
-        <button class="slidebar__indicator"></button>
+        <button class="slidebar__indicator"></button> -->
       </div>
     </div>
   </section>

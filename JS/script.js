@@ -65,7 +65,6 @@ main_nav_list.addEventListener("click", function () {
   nav_btn_hamburger.classList.remove("disp_none");
   nav_close_btn.classList.add("disp_none");
   elm.checked = false;
-  console.log("OK");
 });
 // Copyright
 const yearCopy = document.querySelector(".yearCopy");
