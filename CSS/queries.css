@@ -79,6 +79,9 @@ Bold: 700
   .story p {
     padding: 0 1.2rem;
   }
+  .navbar__langBtn {
+    margin-right: 8rem;
+  }
 }
 /* ?????????????yyy */
 @media screen and (min-width: 800px) {
@@ -90,6 +93,9 @@ Bold: 700
   }
   .navbar__toogle_label {
     display: none;
+  }
+  .navbar__langBtn {
+    margin-right: 0rem;
   }
 }
 @media screen and (max-width: 800px) {
